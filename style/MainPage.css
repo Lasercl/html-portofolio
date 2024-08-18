@@ -5,5 +5,31 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+body{
+    text-align: center;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container ul{
+    text-align: left;
+}
+#container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 
+}
+@media (max-width:548px){
+    #container{
+        font-size: 20pxx;
+        width: 100%;
+    }
 
+}
