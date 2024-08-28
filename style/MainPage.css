@@ -4,17 +4,31 @@
     /* flex-wrap: wrap; */
     flex-wrap: wrap;
     justify-content: center;
+    color: white;
+    
+    padding: 30px;
+    margin-bottom: 20px;
 }
 body{
     text-align: center;
+    background-image:url(../assets/images/wallpaper\ galaxy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    background-position: center; 
+    margin: 0px;
+    padding: 0px;
 }
 #container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px;
     grid-template-rows: 1fr 1fr;
-    width: 60%;
+    width: 1020px;
+    gap: 200px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 #container ul{
     text-align: left;
@@ -26,10 +40,79 @@ body{
     justify-content: center;
 
 }
-@media (max-width:548px){
+#container-flex>div{
+    cursor: pointer;
+    border:solid 1px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    flex: 1;
+    max-width: 300px;
+    min-width: 300px;
+}
+#project{
+    background:linear-gradient(to top,rgb(88, 30, 170),rgba(0, 0, 0, 0));
+    color: white;
+    padding: 20px;
+
+}
+#container>div{
+    border: solid 1px;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    font-family: "Moderustic", sans-serif;
+}
+#navbottom{
+    background: linear-gradient(to bottom,rgb(88, 30, 170),rgb(0, 0, 0));
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#navbottom>a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 2px;
+}
+#navbottom>a:hover{
+    background-color: rgba(72, 0, 240, 0.356);
+}
+
+@media (max-width:1115px){
     #container{
-        font-size: 20pxx;
-        width: 100%;
+        font-size: 10px;
+        width: 900px;
+        gap: 100px;
+
     }
 
+}
+@media (max-width:951px){
+    #container{
+        font-size: 10px;
+        width: 500px;
+        gap: 100px;
+        grid-template-columns: 200px 200px;
+
+    }
+    #container>div{
+        padding: 10px;
+
+    }
+
+}
+
+@media(max-width:593px){
+    #container{
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 300px;
+    }
 }

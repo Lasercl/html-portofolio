@@ -16,6 +16,13 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    \
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Moderustic:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/MainPage.css" />
@@ -35,7 +42,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
         />
       </div>
     </div>
-
     <hr />
     <div id="container">
       <div id="character">
@@ -82,10 +88,14 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
         </ul>
       </div>
     </div>
+    <hr />
     <div id="project">
       <h2>My Project</h2>
       <div id="container-flex">
-        <div id="movieproject">
+        <div
+          id="movieproject"
+          onclick="window.location.href='./public/movie-ranking.html';"
+        >
           <h3>
             <a href="./public/movie-ranking.html">Movie Ranking Project</a>
           </h3>
@@ -95,7 +105,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
             alt="The highlight picture about my favorite film"
           />
         </div>
-        <div id="birthdayproject">
+        <div
+          id="birthdayproject"
+          onclick="window.location.href='./public/birthday-invite.html';"
+        >
           <h3>
             <a href="./public/birthday-invite.html">Birthday Invite Project</a>
           </h3>
@@ -108,8 +121,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
       </div>
     </div>
 
-    <hr />
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    <div id="navbottom">
+      <a href="./public/about.html">About Me</a>
+      <a href="./public/contact.html">Contact Me</a>
+    </div>
   </body>
 </html>
