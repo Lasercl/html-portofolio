@@ -53,6 +53,7 @@ body{
 .container:hover>card:not(:hover){
     filter: grayscale(100%);
 }
+
 .card:hover{
     flex: 3;
 }

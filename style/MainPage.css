@@ -31,6 +31,22 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Efek ease-in-out */
+    
+
+}
+#container2{
+    display: none;
+}
+/* #continer2>svg{
+    align-self: flex-end;
+} */
+#container.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    color: red; /* Ubah warna teks saat menghilang */
+    background-color: rgba(0, 0, 0, 0.379); /* Ubah warna latar belakang saat menghilang */
+   
 }
 #container ul{
     text-align: left;
@@ -84,7 +100,9 @@ body{
 #navbottom>a:hover{
     background-color: rgba(72, 0, 240, 0.356);
 }
-
+#buttonback{
+    cursor: pointer;
+}
 @media (max-width:1115px){
     #container{
         font-size: 10px;
