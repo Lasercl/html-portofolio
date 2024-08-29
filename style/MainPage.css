@@ -18,6 +18,8 @@ body{
     background-position: center; 
     margin: 0px;
     padding: 0px;
+    font-family: "Moderustic", sans-serif;
+
 }
 #container{
     display: grid;
