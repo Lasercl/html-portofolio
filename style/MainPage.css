@@ -11,9 +11,10 @@
 }
 body{
     text-align: center;
-    background-image:url(../assets/images/wallpaper\ galaxy.jpg);
+    background:linear-gradient(to right,purple,black);
+    /* background-image:url(../assets/images/wallpaper\ galaxy.jpg);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
 
     background-position: center; 
     margin: 0px;
@@ -65,6 +66,7 @@ body{
     border-radius: 20px;
     background-color: black;
     flex: 1;
+    border: 0;
     max-width: 300px;
     min-width: 300px;
 }
@@ -80,6 +82,7 @@ body{
     border-radius: 10px;
     color: white;
     padding: 20px;
+    border: 0px;
     font-family: "Moderustic", sans-serif;
 }
 #navbottom{
@@ -102,6 +105,9 @@ body{
 }
 #buttonback{
     cursor: pointer;
+}
+#profilephoto>img{
+    border-radius: 20px;
 }
 @media (max-width:1115px){
     #container{

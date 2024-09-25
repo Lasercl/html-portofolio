@@ -7,20 +7,27 @@
 }
 
 body {
+
  margin:0px;
  padding: 0px;
  text-align: center;
  color: white;
  font-family: "Moderustic", sans-serif;
+ background:linear-gradient(to left,rgb(88, 30, 170) ,rgb(0, 0, 0) );
+
 
 }
 h1{
-    background:linear-gradient(to bottom,black, hsla(209 70% 3% / 100%));
+    /* background:linear-gradient(to bottom,black, hsla(209 70% 3% / 100%)); */
+    /* background:linear-gradient(to bottom,rgb(88, 30, 170),rgb(0, 0, 0)); */
+
     padding: 20px;
 }
 .container{
     height: 89vh;
-    background-color: hsla(209 70% 3% / 100%);  /* For dark theme */
+    /* background-color: hsla(209 70% 3% / 100%);  For dark theme */
+    /* background:linear-gradient(to top,rgb(88, 30, 170),rgb(0, 0, 0)); */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +45,8 @@ h1{
   width: 5.625rem;
   height: 5.625rem;
   border-radius: 14px;
-  background-color: hsla(209 20% 70% / 20%); /* For dark theme */
+  /* background-color: hsla(209 20% 70% / 20%); For dark theme */
+  background-color: black;
   /* background-color: #fff; */
   display: flex;
   justify-content: center;
