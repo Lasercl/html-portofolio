@@ -1,21 +1,37 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 #profile{
     display:flex;
     gap: 20px;
     /* flex-wrap: wrap; */
-    flex-wrap: wrap;
+     flex-wrap: wrap;
     justify-content: center;
     color: white;
     
     padding: 30px;
     margin-bottom: 20px;
+} 
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color:rgba(0, 0, 0, 0.27) !important;
+    /* color: white !important; */
 }
+
+
 body{
     text-align: center;
     background:linear-gradient(to right,purple,black);
     /* background-image:url(../assets/images/wallpaper\ galaxy.jpg);
     background-size: cover;
     background-repeat: no-repeat;  */
-
+    /* display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column; */
     background-position: center; 
     margin: 0px;
     padding: 0px;
@@ -62,11 +78,12 @@ body{
 #container-flex>div{
     cursor: pointer;
     border:solid 1px;
-    padding: 20px;
+    padding:20px;
     border-radius: 20px;
     background-color: black;
     flex: 1;
     border: 0;
+    /* font-size: smaller; !important; */
     max-width: 300px;
     min-width: 300px;
 }
@@ -109,6 +126,25 @@ body{
 #profilephoto>img{
     border-radius: 20px;
 }
+
+.more{
+    background: linear-gradient(to bottom,rgb(88, 30, 170),rgb(0, 0, 0));
+
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 20px;
+    /* width: 20%; */
+}
+.more>a{
+    background:linear-gradient(to right,rgba(128, 0, 128, 0.459),rgba(0, 0, 0, 0.426));
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: "Moderustic", sans-serif;
+    font-weight: bold;
+
+}
 @media (max-width:1115px){
     #container{
         font-size: 10px;
@@ -132,7 +168,6 @@ body{
     }
 
 }
-
 @media(max-width:593px){
     #container{
         font-size: 10px;

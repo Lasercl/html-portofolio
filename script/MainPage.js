@@ -43,7 +43,7 @@
 //     },500)
     
 // });
-var content3;
+// var content3;
 var content; // Dideklarasikan di luar event listener untuk bisa diakses di kedua event listener
 
 document.getElementById("aboutme").addEventListener("click", function(event) {
@@ -54,7 +54,7 @@ document.getElementById("aboutme").addEventListener("click", function(event) {
     const content2 = document.getElementById("container2");
     
     content.classList.add('hidden');
-
+    
     setTimeout(function() {
         content2.style.display = "flex";
         content2.style.flexDirection = "column";
@@ -65,27 +65,36 @@ document.getElementById("aboutme").addEventListener("click", function(event) {
         content2.style.padding = "10px";
         content2.style.width = "100%";
         content2.style.textAlign = "center";
-
+        
         content3 = content; // Simpan konten lama ke dalam content3
         content.style.display = "none"; // Sembunyikan konten lama
 
         content = content2; // Set content ke content2 yang baru
         content.classList.remove('hidden');
+        content2.scrollIntoView({
+            behavior: 'smooth'  // Scroll secara halus
+        });
     }, 500);
+   
 });
 
 document.getElementById("buttonback").addEventListener("click", function(event) {
     event.preventDefault();
 
     const content2 = document.getElementById("container2");
+    // const content3 = document.getElementById("container");
+
     content.style.transition = "all 0.5s ease";
 
     content2.classList.add('hidden');
-
+    // content2.requestFullscreen()
     setTimeout(function() {
         content.style.display="none"
         content = content3; // Kembalikan konten lama
         content.style.display = "grid"; // Tampilkan konten lama
-        content.classList.remove('hidden');
+        content.classList.remove('hidden');        
+        // content.classList.add('hidden');
+        // content2.requestFullscreen()
+
     }, 500);
 });
