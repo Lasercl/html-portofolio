@@ -143,6 +143,7 @@ body{
     color: antiquewhite;
     font-family: "Moderustic", sans-serif;
     font-weight: bold;
+    border: 1px solid;
 
 }
 @media (max-width:1115px){

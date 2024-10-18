@@ -35,7 +35,7 @@ body{
     background-repeat: no-repeat;
 }
 .frontcard{
-    background-image: url(../assets/images/birthday2.jpg);
+    background-image: url(../../assets/images/birthday2.jpg);
     background-color: rgba(255, 163, 42, 0.2);
     align-items: center;
    
@@ -48,7 +48,7 @@ body{
     transform: translateZ(2rem);
 }
 .backcard{
-    background-image: url(../assets/images/birthday-cake.png);
+    background-image: url(../../assets/images/birthday-cake.png);
     transform: rotateY(180deg);
     gap: 1.5rem;
 }

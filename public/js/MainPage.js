@@ -89,6 +89,7 @@ document.getElementById("buttonback").addEventListener("click", function(event) 
     content2.classList.add('hidden');
     // content2.requestFullscreen()
     setTimeout(function() {
+        
         content.style.display="none"
         content = content3; // Kembalikan konten lama
         content.style.display = "grid"; // Tampilkan konten lama

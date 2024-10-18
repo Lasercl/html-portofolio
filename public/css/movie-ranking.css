@@ -36,13 +36,13 @@ body{
     color: transparent;
 }
 #deadpool{
-    background-image:url(../assets/images/deadpool-wolverine.jpg);
+    background-image:url(../../assets/images/deadpool-wolverine.jpg);
 }
 #Haikyuu{
-    background-image: url(../assets/images/haikyuu.jpg);
+    background-image: url(../../assets/images/haikyuu.jpg);
 }
 #Avenger{
-    background-image: url(../assets/images/avengerendgame.jpg);
+    background-image: url(../../assets/images/avengerendgame.jpg);
 }
 .card:nth-child(odd){
   translate: 0 -20px;
