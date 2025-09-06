@@ -44,9 +44,9 @@ function renderProjects(projects, currentProjectId) {
 
   limitedProjects.forEach(p => {
     otherProject.innerHTML += `
-      <div class="p-4 project-card" onclick="window.location.href='../detailProject.html?id=${p.id}'">
+      <div class="p-4 project-card" onclick="window.location.href='./detailProject.html?id=${p.id}'">
         <h3>
-          <a class="fs-5" href="../detailProject.html?id=${p.id}" target="_blank">${p.title}</a>
+          <a class="fs-5" href="./detailProject.html?id=${p.id}" target="_blank">${p.title}</a>
         </h3>
         <img src="${p.path}" width="250px" height="150px" alt="${p.title}" />
       </div>
