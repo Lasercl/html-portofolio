@@ -38,6 +38,19 @@ body{
     font-family: "Moderustic", sans-serif;
 
 }
+.flex-detail-project{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+    width: 85%;
+    margin-left: auto;
+    color: azure;
+    margin-right: auto;
+    align-items: flex-start;
+    
+}
 #container{
     display: grid;
     grid-template-columns: 400px 400px;
@@ -93,6 +106,21 @@ body{
     padding: 20px;
 
 }
+#otherProjectDetail>div{
+     cursor: pointer;
+    border:solid 1px;
+    padding:20px;
+    border-radius: 20px;
+    background-color: black;
+    flex: 1;
+    border: 0;
+    /* font-size: smaller; !important; */
+    max-width: 300px;
+    min-width: 300px;
+}
+#otherProjectDetail{
+    margin-bottom: 2rem;
+}
 #container>div{
     border: solid 1px;
     background-color: rgba(0, 0, 0, 0.356);
@@ -132,19 +160,26 @@ body{
 
     /* margin-left: auto;
     margin-right: auto; */
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 5rem;
     /* width: 20%; */
 }
 .more>a{
-    background:linear-gradient(to right,rgba(128, 0, 128, 0.459),rgba(0, 0, 0, 0.426));
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 13px;
     border-radius: 10px;
     text-decoration: none;
     color: antiquewhite;
     font-family: "Moderustic", sans-serif;
-    font-weight: bold;
-    border: 1px solid;
 
+}
+#projects{
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: #ffffff; 
+}
+#projects option{
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff; 
 }
 @media (max-width:1115px){
     #container{
